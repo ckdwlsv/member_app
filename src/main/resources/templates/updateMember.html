@@ -6,10 +6,10 @@
 </head>
 <body>
 	<h1>회원수정</h1>
-	<form th:action="@{/member/updateMember}" method="post" th:object="${dto}">
+	<form th:action="@{/member/update}" method="post" th:object="${dto}">
 		<input type="hidden" name="id" th:value="*{id}">
 		<div>
-			<label>ID : <spanth th:text="*{id}"></spanth></label>
+			<label>ID : <span th:text="*{id}"></span></label>
 		</div>
 		<div>
 			<label>이름</label>
